@@ -9,15 +9,15 @@
       <h1>
       My Blog
       </h1>
-      <nav>
-        <ul>
-          <li><a href="{{site.baseurl}}/index.html">Home</a></li>
-          <li><a href="{{site.baseurl}}/news.html">News</a></li>
-        </ul>
-      </nav>
+      {% include navigation.html %}
     </header>
-    
+
     {{content}}
+
+    <footer>
+      {% include navigation.html%}
+      <p> 2017 Tayler Ramsay Blog</p>
+    </footer>
 
   </body>
 </html>
